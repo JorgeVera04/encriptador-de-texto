@@ -7,15 +7,19 @@
     <title>Encriptador de Texto</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
     <script src="Script.js"></script>
 
 </head>
 
 <body>
 
-    <div class="cajaPrincipal">
+    <section class="cajaPrincipal">
 
         <header>
             <div class="logo-container">
@@ -25,32 +29,43 @@
             <p class="desc">Esta página web tiene la funcionalidad para encriptar texto. ¡Inténtalo!</p>
         </header>
 
-    </div>
+    </section>
 
-    <div class="encriptacion">
+    <main class="encriptacion">
 
-        <div class="enc">
+        <section class="enc">
 
             <textarea id="textoOriginal" class="texto" placeholder="INTRODUCE TU TEXTO PARA ENCRIPTAR AQUÍ"></textarea>
+
             <button id="encriptarBoton" class="boton-encriptar" onclick="validarEncriptacion()">ENCRIPTAR TEXTO</button>
 
-        </div>
+        </section>
 
-        <div class="desenc">
+        <section class="desenc">
 
             <textarea id="textoEncriptado" class="desencriptacion"
+
                 placeholder="¡AQUÍ APARECERÁ TU TEXTO ENCRIPTADO!"></textarea>
-            <button id="desencriptarBoton" class="boton-desencriptar" onclick="validarDesencriptacion()">DESENCRIPTAR TEXTO</button>
 
-        </div>
+            <button id="desencriptarBoton" class="boton-desencriptar" onclick="validarDesencriptacion()">DESENCRIPTAR
+                TEXTO</button>
 
-        <div class="copy-button"><button class="boton-copiar" onclick="copiarTexto()">COPIAR TEXTO ENCRIPTADO</button></div>
+            </section>
 
-        <div id="mensajeError" class="mensaje-error"></div>
+        <section class="copy-button">
 
-    </div>
+            <button class="boton-copiar" onclick="copiarTexto()">COPIAR TEXTO ENCRIPTADO</button>
+
+        </section>
+        
+        <section id="mensajeError" class="mensaje-error"></div>
+
+    </main>
+
     <footer class="footer">
+
         <p>&copy; 2024 Encriptador de Texto | Creado por Jorge Eli Vera Lazaro</p>
+        
     </footer>
 
 </body>
