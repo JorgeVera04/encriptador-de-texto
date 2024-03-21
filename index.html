@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador de Texto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="Script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="cajaPrincipal">
+
+        <header>
+            <div class="logo-container">
+                <img class="logo" src="logo.png">
+                <h1 class="title">ENCRIPTADOR DE TEXTO</h1>
+            </div>
+            <p class="desc">Esta página web tiene la funcionalidad para encriptar texto. ¡Inténtalo!</p>
+        </header>
+
+    </div>
+
+    <div class="encriptacion">
+
+        <div class="enc">
+
+            <textarea id="textoOriginal" class="texto" placeholder="INTRODUCE TU TEXTO PARA ENCRIPTAR AQUÍ"></textarea>
+            <button id="encriptarBoton" class="boton-encriptar" onclick="validarEncriptacion()">ENCRIPTAR TEXTO</button>
+
+        </div>
+
+        <div class="desenc">
+
+            <textarea id="textoEncriptado" class="desencriptacion"
+                placeholder="¡AQUÍ APARECERÁ TU TEXTO ENCRIPTADO!"></textarea>
+            <button id="desencriptarBoton" class="boton-desencriptar" onclick="validarDesencriptacion()">DESENCRIPTAR TEXTO</button>
+
+        </div>
+
+        <div class="copy-button"><button class="boton-copiar" onclick="copiarTexto()">COPIAR TEXTO ENCRIPTADO</button></div>
+
+        <div id="mensajeError" class="mensaje-error"></div>
+
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Encriptador de Texto | Creado por Jorge Eli Vera Lazaro</p>
+    </footer>
+
+</body>
+
+</html>
